@@ -6,7 +6,7 @@ import css from "./index.module.scss";
 class Title extends Component {
   render() {
     return(
-      <h1 className={`${css.title}`}>{this.props.children}</h1>
+      <h1 className={`${css.title} ${css[this.props.type]}`}>{this.props.children}</h1>
     )
   }
 }

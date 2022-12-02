@@ -3,4 +3,12 @@
   font-weight:900;
   -moz-osx-font-smoothing: grayscale;
   margin:0;
+  &.white-bolder {
+    color: $text-white;
+    font-weight: bolder;
+  }
+  &.thinner {
+    color: $text-primary;
+    font-weight: 400;
+  }
 }
