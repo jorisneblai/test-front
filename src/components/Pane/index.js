@@ -16,7 +16,12 @@ class Pane extends Component {
           )
         }
         <Title>{this.props.title}</Title>
-        <Button size="sm"><i className="fa fa-arrow-right"></i></Button>
+        {
+          this.props.button && (
+            <Button size="sm">{">"}</Button>
+          )
+        }
+        
       </div>
     )
   }

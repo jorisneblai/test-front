@@ -9,4 +9,9 @@ storiesOf('Exercise/Components/Pane', module)
     <Pane />
   )).add('with cover', () => (
     <Pane cover={Img} title="Le printemps des jardiniers" />
-  ));
+  )).add('with button', () => (
+    <>
+      <Pane button={true} />
+      <Pane button={true} />
+    </>
+  ))

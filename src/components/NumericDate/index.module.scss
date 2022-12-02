@@ -1,0 +1,19 @@
+.dateBox {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    width: max-content;
+    line-height: normal;
+    padding: 0 5px;
+    border-radius: 3px;
+    
+    .dateDay {
+        padding: 3px;
+    }
+    .dateMonth {
+        @extend .dateDay;
+        border-top: 1px solid $text-secondary;
+        font-size: 15px;
+        text-align: center;
+    }
+}

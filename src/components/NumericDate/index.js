@@ -5,12 +5,14 @@ import css from "./index.module.scss";
 
 class NumericDate extends Component {
   render() {
-    return(
-     <p>{this.props.day} - {this.props.month}</p>
+    return (
+      <div className={`${css.dateBox}`}>
+        <span className={`${css.dateDay}`}>{this.props.day}</span>
+        <span className={`${css.dateMonth}`}>{this.props.month}</span>
+      </div>
     )
   }
 }
-
 
 NumericDate.propTypes = {
   day: PropTypes.string,
@@ -18,3 +20,4 @@ NumericDate.propTypes = {
 }
 
 export default NumericDate;
+
