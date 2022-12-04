@@ -1,3 +1,8 @@
+## Remarques
+
+- Pas exactement la même image, donc d'avoir un rendu pixel perfect par rapport à la maquette.
+- Mocks.json légèrement modifié pour appeller les bonnes valeurs conforme à la maquette.
+
 # Publidata
 ➡ Front-end test
 

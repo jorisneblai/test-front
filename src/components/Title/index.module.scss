@@ -1,14 +1,15 @@
-.title{
+.title {
   font-size: 26px;
-  font-weight:900;
+  color: $text-primary;
+  font-weight: 500;
   -moz-osx-font-smoothing: grayscale;
-  margin:0;
+  margin: 0;
+  z-index: 2;
+  display: flex;
+  line-height: initial;
   &.white-bolder {
     color: $text-white;
-    font-weight: bolder;
-  }
-  &.thinner {
-    color: $text-primary;
-    font-weight: 400;
+    font-weight: 900;
+    width: 200px;
   }
 }

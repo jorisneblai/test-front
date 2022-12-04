@@ -1,11 +1,22 @@
 :global{
   .btn-primary{
     background-color:$color-primary;
-    border-color:$color-primary;
+    border: none;
+    border-color: $color-primary;
+    margin: 20px 10px;
+    padding: 23px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    &:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active{
-      background-color: darken($color-primary, 8%);
-      border-color: darken($color-primary, 8%);
+    // , &:focus, &:active, &:not(:disabled):not(.disabled):active
+
+    &:hover {
+      opacity: 0.4;
     }
   }
 }

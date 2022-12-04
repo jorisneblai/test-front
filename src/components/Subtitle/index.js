@@ -16,7 +16,14 @@ class Subtitle extends Component {
   }
 }
 
-Subtitle.propTypes = {};
-Subtitle.defaultProps = {};
+Subtitle.propTypes = {
+  type: PropTypes.string,
+  children: PropTypes.any,
+  icon: PropTypes.any
+};
+
+Subtitle.defaultProps = {
+
+};
 
 export default Subtitle;
