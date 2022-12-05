@@ -1,5 +1,13 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("SourceSansPro"),    
+  url("../../assets/styles/fonts/SourceSansPro/Source_Sans_Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 500;
+  font-weight: 900;
+}
+
 .title {
-  font-size: 22px;
+  font-size: 24px;
   color: $text-primary;
   font-weight: 500;
   -moz-osx-font-smoothing: grayscale;
@@ -11,9 +19,9 @@
     font-size: 26px;
     color: $text-white;
     font-weight: 900;
-    width: 200px;
-  }
-  &:hover {
-    color: $color-primary;
+    width: 170px;
   }
 }
+    
+    
+

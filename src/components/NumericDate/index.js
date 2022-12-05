@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import css from "./index.module.scss";
 
 class NumericDate extends Component {
+
+  // Building here a state to handle the date format and more precisely the day and the month.
   constructor() {
     super();
     this.state = {
@@ -12,10 +14,12 @@ class NumericDate extends Component {
     }
   }
 
+  // Calling date formatting function on component mount.
   componentDidMount() {
     this.formatDate(this.props.date);
   }
 
+  // Handle date received from props to comply with our component
   formatDate = (date) => {
     const dateArr = date.split("/");
     this.setState({ day: dateArr[0] })

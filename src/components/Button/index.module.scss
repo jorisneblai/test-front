@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("SourceSansPro"),    
+  url("../../assets/styles/fonts/SourceSansPro/Source_Sans_Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
 :global{
   .btn-primary{
     background-color:$color-primary;
@@ -12,9 +19,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    // , &:focus, &:active, &:not(:disabled):not(.disabled):active
-
     &:hover {
       opacity: 0.4;
     }

@@ -1,5 +1,7 @@
 a {
   text-decoration: none;
+  display: block;
+  width: max-content;
 }
 
 .pane {
@@ -16,6 +18,10 @@ a {
   &:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     transition: box-shadow 0.3s ease-in-out;
+    h1 {
+      color: $color-primary;
+      text-shadow: #000 1px 1px 1px;
+    }
   }
 }
 

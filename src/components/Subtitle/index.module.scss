@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Source Sans Pro";
+    src: local("SourceSansPro"),    
+    url("../../assets/styles/fonts/SourceSansPro/Source_Sans_Pro/SourceSansPro-Regular.ttf") format("truetype");
+    font-weight: 400;
+  }
+
 .subtitle{
     font-size: 15px;
     -moz-osx-font-smoothing: grayscale;
