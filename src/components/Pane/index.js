@@ -13,27 +13,28 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 class Pane extends Component {
   render() {
-    return(
-      <div className={`${css.pane} ${this.props.cover && css.withCover}`}>
-        {
-          this.props.cover && (
-            <>
-              <div className={css.cover} style={{ backgroundImage: "url(" + this.props.cover + ")" }}></div>
-              <div className={css.overlay}></div>
-            </>
-          )
-        }
-        <div className={css.paneRow}>
-          <div className={css.paneCol}>
-            <div className={css.paneRow}>
-              {
-                this.props.date && (
-                  <NumericDate date={this.props.date} />
-                )
-              }
-              { this.props.mainPane ? 
-                  <Title type={this.props.titleType}>{this.props.title}</Title> 
-                :
+    return (
+      <a href={this.props.url} target="_blank">
+        <div className={`${css.pane} ${this.props.cover && css.withCover}`}>
+          {
+            this.props.cover && (
+              <>
+                <div className={css.cover} style={{ backgroundImage: "url(" + this.props.cover + ")" }}></div>
+                <div className={css.overlay}></div>
+              </>
+            )
+          }
+          <div className={`${css.paneRow} ${this.props.mainPane && css.main}`}>
+            <div className={css.paneCol}>
+              <div className={css.paneRow}>
+                {
+                  this.props.date && (
+                    <NumericDate date={this.props.date} />
+                  )
+                }
+                {this.props.mainPane ?
+                  <Title type={this.props.titleType}>{this.props.title}</Title>
+                  :
                   <>
                     <div className={css.titleIcon}>{this.props.titleIcon}</div>
                     <div className={css.paneCol}>
@@ -41,19 +42,26 @@ class Pane extends Component {
                       <Subtitle icon={faMapMarkerAlt} type={this.props.subtitleType}>{this.props.subtitle}</Subtitle>
                     </div>
                   </>
+                }
+              </div>
+              {
+                this.props.mainPane && (
+                  <Subtitle icon={faMapMarkerAlt} type={this.props.subtitleType}>{this.props.subtitle}</Subtitle>
+                )
               }
             </div>
-            { this.props.mainPane && <Subtitle icon={faMapMarkerAlt} type={this.props.subtitleType}>{this.props.subtitle}</Subtitle>}
+            {
+              this.props.button && (
+                <div className={css.divBtn}>
+                  <Button size="sm">
+                    {this.props.buttonContent}
+                  </Button>
+                </div>
+              )
+            }
           </div>
-          {
-            this.props.button && (
-              <div className={css.divBtn}>
-                <Button size="sm" icon={faChevronRight} />
-              </div>
-            )
-          }
         </div>
-      </div>
+      </a>
     )
   }
 }
@@ -62,7 +70,8 @@ Pane.propTypes = {
   cover: PropTypes.string,
   title: PropTypes.string,
   date: PropTypes.string,
-  button: PropTypes.bool
+  button: PropTypes.bool,
+  buttonContent: PropTypes.any
 };
 
 Pane.defaultProps = {
@@ -71,25 +80,3 @@ Pane.defaultProps = {
 
 export default Pane;
 
-// premier cas : 
-// <Row>
-//   <Col>
-//     <Row>
-//       Date Titre
-//     </Row>
-//     Sous titre
-//   </Col>
-//   <Row>
-//       bouton
-//   </Row>
-// </Row>
-
-// 2 cas : 
-// <Row>
-//   date
-//   icon
-//   <Col>
-//     titre
-//     Sous titre
-//   </Col>
-// </Row>

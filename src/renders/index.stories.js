@@ -5,6 +5,9 @@ import Subtitle from "../components/Subtitle";
 import NumericDate from "../components/NumericDate";
 import Pane from "../components/Pane";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
 import mockData from "../mocks/events.json";
 
 import Img from "../components/Pane/gardener_cover.png";
@@ -24,6 +27,7 @@ storiesOf('Exercise/Renders', module)
               cover={elm.cover == "gardener_cover.png" && Img}
               mainPane={true}
               button={true}
+              buttonContent={ <FontAwesomeIcon icon={faChevronRight} /> }
             />
           :
             <Pane 

@@ -1,5 +1,5 @@
 .title {
-  font-size: 26px;
+  font-size: 22px;
   color: $text-primary;
   font-weight: 500;
   -moz-osx-font-smoothing: grayscale;
@@ -8,8 +8,12 @@
   display: flex;
   line-height: initial;
   &.white-bolder {
+    font-size: 26px;
     color: $text-white;
     font-weight: 900;
     width: 200px;
+  }
+  &:hover {
+    color: $color-primary;
   }
 }
