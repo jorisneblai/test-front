@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Source Sans Pro";
+    src: local("SourceSansPro"),    
+    url("../../assets/styles/fonts/SourceSansPro/Source_Sans_Pro/SourceSansPro-Regular.ttf") format("truetype");
+    font-weight: 400;
+  }
+
+.subtitle{
+    font-size: 15px;
+    -moz-osx-font-smoothing: grayscale;
+    margin:0;
+    display: flex;
+    align-items: center;
+    color: $text-secondary;
+    z-index: 3;
+    .white {
+        color: $text-white;
+    }
+    .icon {
+        color: $color-primary;
+    }
+  }
+  

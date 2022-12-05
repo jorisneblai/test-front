@@ -1,19 +1,26 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("SourceSansPro"),    
+  url("../../assets/styles/fonts/SourceSansPro/Source_Sans_Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
 :global{
   .btn-primary{
     background-color:$color-primary;
-    border-color:$color-primary;
-
-    &:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active{
-      background-color: darken($color-primary, 8%);
-      border-color: darken($color-primary, 8%);
+    border: none;
+    border-color: $color-primary;
+    margin: 20px 10px;
+    padding: 23px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      opacity: 0.4;
     }
   }
-}
-
-.btn{
-
-}
-
-.sm{
-
 }

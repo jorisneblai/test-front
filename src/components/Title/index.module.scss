@@ -1,6 +1,27 @@
-.title{
-  font-size: 26px;
-  font-weight:900;
-  -moz-osx-font-smoothing: grayscale;
-  margin:0;
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("SourceSansPro"),    
+  url("../../assets/styles/fonts/SourceSansPro/Source_Sans_Pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 500;
+  font-weight: 900;
 }
+
+.title {
+  font-size: 24px;
+  color: $text-primary;
+  font-weight: 500;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  z-index: 2;
+  display: flex;
+  line-height: initial;
+  &.white-bolder {
+    font-size: 26px;
+    color: $text-white;
+    font-weight: 900;
+    width: 170px;
+  }
+}
+    
+    
+

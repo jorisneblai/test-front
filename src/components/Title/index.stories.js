@@ -6,4 +6,8 @@ import Title from "./";
 storiesOf('Exercise/Components/Title', module)
   .add('default', () => (
     <Title>My title</Title>
+  )).add('white bolder', () => (
+    <Title type="white-bolder">My title</Title>
+  )).add('with emoji and text', () => (
+    <Title icon="🌞">My title</Title>
   ))
