@@ -1,7 +1,7 @@
 ## 👨‍💻 Processus de développement / Remarques 👨‍💻
 
 ### Processus de développement
-- - Utilisation de la méthode map pour récupérer les données fournies du tableau d'objet. Des données pré-définies sont fournies avec le projet, j'ai choisi d'utiliser la méthode map pour simuler un rendu des données comme si il étaient récupérées d'une API. De ce fait, itérer sur le tableau de données et abstraire au maximum mon composant *Pane* semblait être la meilleure méthode.
+- Utilisation de la méthode map pour récupérer les données fournies du tableau d'objet. Des données pré-définies sont fournies avec le projet, j'ai choisi d'utiliser la méthode map pour simuler un rendu des données comme si il étaient récupérées d'une API. De ce fait, itérer sur le tableau de données et abstraire au maximum mon composant *Pane* semblait être la meilleure méthode.
 - Dans le composant Pane, j'ai choisi de passer un props pour gérer les différents styles : "mainPane". Ce props va nous        permettre, en interne du composant, de gérer les différences de placement des éléments. Au début, ce choix semblait judicieux, mais à terme il à peut être trop complexifié le composant, cela peut faire l'objet d'une refactorisation.
 
 ### Remarques concernant les ressources fournis
