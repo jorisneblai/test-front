@@ -9,6 +9,7 @@ import NumericDate from '../NumericDate';
 import css from "./index.module.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 class Pane extends Component {
   render() {
@@ -47,7 +48,7 @@ class Pane extends Component {
           {
             this.props.button && (
               <div className={css.divBtn}>
-                <Button size="sm">{">"}</Button>
+                <Button size="sm" icon={faChevronRight} />
               </div>
             )
           }

@@ -1,7 +1,8 @@
 import React from 'react';
 import { storiesOf } from "@storybook/react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarker } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 import Button from "./";
 
@@ -10,7 +11,7 @@ storiesOf('Exercise/Components/Button', module)
     <Button>My button</Button>
   )).add('with some emoji', () => (
     <Button><span role="img" aria-label="so cool">😀 😎 👍 💯</span></Button>
-  )).add("with font-awesome", () => (
+  )).add('with fa marker', () => (
     <Button>
       <FontAwesomeIcon icon={faMapMarker} />
     </Button>
@@ -18,4 +19,8 @@ storiesOf('Exercise/Components/Button', module)
     <Button type="dark">My button</Button>
   )).add('with size', () => (
     <Button size="sm">My button</Button>
+  )).add('with fa chevron', () => (
+    <Button>
+      <FontAwesomeIcon icon={faChevronRight} />
+    </Button>
   ));
